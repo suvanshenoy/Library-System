@@ -1,7 +1,7 @@
 {
   "name": "library_frontend",
   "scripts": {
-    "start": "cd src;bun run index.ts;cd .."
+    "start": "cd src;bun run index.js;cd .."
   },
   "devDependencies": {
     "@types/bun": "latest"
