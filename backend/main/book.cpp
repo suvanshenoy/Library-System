@@ -1,4 +1,4 @@
-#include "../include/book.hpp"
+#include "book.hpp"
 #include <string>
 
 using std::string;
