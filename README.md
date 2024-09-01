@@ -19,24 +19,15 @@ first go into backend directory using cd
     cd backend
 ```
 
-- use npm or bun or pnpm to run the commands below:
+- use build.zig to build the project and create an executable
 to build the project use:
-
 ```
-      [your_package_manager] run bcpp or [your_package_manager] run build-cpp
+  zig build run-cmake 
+  zig build run-ninja
 ```
-- after building the project an executable get created , run it using:
+- after building the project an executable get created in 'build' directory , run it using:
 ```
-      ./LibraryBackend
-```
-
-- to clean the directory having unwanted cmake builds and folders:
-```
-     [your_package_manager] run clean
-``` 
-###      or           
-```
-     [your_package_manager] run cl
+      ./build/LibraryBackend
 ```
 
 
@@ -75,8 +66,5 @@ to build the project use:
 ```
 
 
-
-
-
-Note: make sure you run them simultaneous in 3 sessions
+Note: make sure you run them simultaneous in 3 terminal sessions
 
