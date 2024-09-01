@@ -3,11 +3,10 @@
 
 ### Cli tools required:
 
-- cmake,
-- typescript
+- cmake,zig build system
+- typescript / nodejs
 - bun or pnpm or npm
 - python
-- gcc/clang
 - poetry
 
 ### running the backend:
@@ -16,18 +15,21 @@
 
 first go into backend directory using cd
 ```
-    cd backend
+         cd backend
 ```
 
 - use build.zig to build the project and create an executable
 to build the project use:
 ```
-  zig build run-cmake 
-  zig build run-ninja
+         zig build run-cmake 
+         zig build run-ninja
 ```
+
+- If zig was not already installed , install from  https://ziglang.org/download/
+
 - after building the project an executable get created in 'build' directory , run it using:
 ```
-      ./build/LibraryBackend
+         ./build/LibraryBackend
 ```
 
 
@@ -36,33 +38,33 @@ to build the project use:
  - to install the dependencies in package.json required for frontend run:
 
 ```
-      [you_package_manager] install
+         [you_package_manager] install
 ```
-###     or
+###                 or
 ```
-[you_package_manager] i
+         [you_package_manager] i
 ```
 
 - to run the project:
 ```
-       [your_package_manager] start
+         [your_package_manager] start
 ```
 
 ### running the python machine learning backend:
 - make sure you have poetry installed
 - to install the dependencies use:
 ```
-        poetry install
+         poetry install
 ```
 
 - next you need to go into the virtual environment created by poetry , for that your can use:
 ```
-        poetry shell
+         poetry shell
 ```
 
 - to run the project:
 ```
-        python3 -m flask --app main.py --debug run
+         python3 -m flask --app main.py --debug run
 ```
 
 
