@@ -4,7 +4,7 @@
 ### Cli tools required:
 
 - cmake,zig build system
-- typescript / nodejs
+- nodejs
 - bun or pnpm or npm
 - python
 - poetry
