@@ -1,2 +1,4 @@
 /build
 /.zig-cache
+/.ninja_deps
+/.ninja_log
