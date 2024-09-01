@@ -1,10 +1,9 @@
 import axios from 'axios';
-import dotenv from 'dotenv';
+import { env } from 'process';
 
-dotenv.config()
 const API_BASE_URL = process.env.API_BASE_URL;
 
-export const borrowBook = async (userId: number, bookId: number): Promise<void> => {
+export const borrowBook = async (userId, bookId) => {
   try {
     const response = await axios.post(`${API_BASE_URL}/borrow`, null, {
       params: { userId, bookId },
@@ -16,7 +15,7 @@ export const borrowBook = async (userId: number, bookId: number): Promise<void> 
   }
 }
 
-export const returnBook = async (userId: number, bookId: number): Promise<void> => {
+export const returnBook = async (userId, bookId) => {
   try {
     const response = await axios.post(`${API_BASE_URL}/return`, null, {
       params: { userId, bookId },
@@ -28,7 +27,7 @@ export const returnBook = async (userId: number, bookId: number): Promise<void> 
   }
 }
 
-export const getRecommendations = async (userId: number): Promise<any> => {
+export const getRecommendations = async (userId) => {
   try {
     const response = await axios.get(`${API_BASE_URL}/recommendations`, {
       params: { userId }
