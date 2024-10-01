@@ -1,7 +1,7 @@
-# Library System
+## Library System
 
 
-### Cli tools required:
+#### Cli tools required:
 
 - cmake,zig build system
 - typescript / nodejs
@@ -9,7 +9,7 @@
 - python
 - poetry
 
-### running the backend:
+#### running the backend:
 
 - use the following commands:
 
@@ -34,7 +34,7 @@ to build the project use:
 
 
 
-### running the frontend:
+#### Running the frontend api:
  - to install the dependencies in package.json required for frontend run:
 
 ```
@@ -50,7 +50,7 @@ to build the project use:
          [your_package_manager] start
 ```
 
-### running the python machine learning backend:
+#### running the python machine learning backend:
 - make sure you have poetry installed
 - to install the dependencies use:
 ```
