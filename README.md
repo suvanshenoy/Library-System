@@ -47,7 +47,7 @@ to build the project use:
 
 - to run the project:
 ```
-         [your_package_manager] start
+         [your_package_manager] dev
 ```
 
 #### running the python machine learning backend:
@@ -62,9 +62,9 @@ to build the project use:
          poetry shell
 ```
 
-- to run the project:
+- to run the project at port 5001:
 ```
-         python3 -m flask --app main.py --debug run
+         python3 -m flask --app main.py --debug run -p 5001
 ```
 
 
