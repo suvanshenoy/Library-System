@@ -3,7 +3,7 @@
 
 #### Cli tools required:
 
-- cmake,zig build system
+- cmake,ninja,zig build system
 - typescript / nodejs
 - bun or pnpm or npm
 - python
@@ -24,8 +24,8 @@ to build the project use:
          zig build run-cmake 
          zig build run-ninja
 ```
-
 - If zig was not already installed , install from  https://ziglang.org/download/
+- Also install cmake and ninja from https://cmake.org/download/ and https://ninja-build.org/
 
 - after building the project an executable get created in 'build' directory , run it using:
 ```
