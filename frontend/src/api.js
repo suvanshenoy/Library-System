@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { env } from 'process';
 
-const API_BASE_URL = process.env.API_BASE_URL;
+const API_BASE_URL = process.env.API_BASE_URL || 5000;
 
 export const borrowBook = async (userId, bookId) => {
   try {
