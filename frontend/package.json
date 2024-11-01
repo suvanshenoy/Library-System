@@ -1,7 +1,8 @@
 {
   "name": "library_frontend",
   "scripts": {
-    "start": "cd src;bun run index.js;cd .."
+    "dev": "nodemon -e ts -x bun start",
+    "start": "cd src;bun run index.ts;cd .."
   },
   "devDependencies": {
     "@types/bun": "latest"
