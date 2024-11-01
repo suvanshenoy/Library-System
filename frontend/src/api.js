@@ -5,7 +5,7 @@ const API_BASE_URL = process.env.API_BASE_URL || 5000;
 
 export const borrowBook = async (userId, bookId) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/borrow`, null, {
+    const response = await axios.post(`http://localhost:${API_BASE_URL}/borrow`, null, {
       params: { userId, bookId },
       headers: { 'Content-Type': 'text/plain' }
     });
@@ -17,7 +17,7 @@ export const borrowBook = async (userId, bookId) => {
 
 export const returnBook = async (userId, bookId) => {
   try {
-    const response = await axios.post(`${API_BASE_URL}/return`, null, {
+    const response = await axios.post(`http://localhost:${API_BASE_URL}/return`, null, {
       params: { userId, bookId },
       headers: { 'Content-Type': 'text/plain' }
     });
@@ -29,7 +29,7 @@ export const returnBook = async (userId, bookId) => {
 
 export const getRecommendations = async (userId) => {
   try {
-    const response = await axios.get(`${API_BASE_URL}/recommendations`, {
+    const response = await axios.get(`http://localhost:${API_BASE_URL}/recommendations`, {
       params: { userId }
     });
     return response.data;
